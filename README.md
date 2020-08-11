@@ -8,6 +8,7 @@ class Readme:
         self.tech_stack = ['Python', 'Flask', 'Reactjs', 'Go']
         self.started_programming = datetime(year=2020, month=3, day=4)
         self.age = 15
+        self.gender = 'male'
         self.tools = ['VSCode', 'Vim', 'Git']
 
         self.contacts = {
