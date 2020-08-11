@@ -1,5 +1,3 @@
-### Yo whats up
-
 ```py
 from datetime import datetime
 
