@@ -1,24 +1,21 @@
 ```py
-from datetime import datetime
+from flask import Flask
 
-class Readme:
-    def __init__(self):
-        self.tech_stack = ['Python', 'Flask', 'Reactjs', 'Go']
-        self.started_programming = datetime(year=2020, month=3, day=4)
-        self.age = 15
-        self.gender = 'male'
-        self.tools = ['VSCode', 'Vim', 'Git']
+app = Flask(__name__)
 
-        self.contacts = {
-            'Discord': 'Le baguette man#9289'
-            # TODO: get more contacts
-        }
+@app.route('/')
+def index():
+    return "https://github.com/peppizza/peppizza"
 
-    def can_i_do_it(self, complexity: int) -> bool:
-        if complexity > 4:
-            return False
-        else:
-            return True
+@app.route('/skills')
+def skills():
+    return {'skills': ['flask', 'python', 'Go', 'ReactJS']}
 
-Readme()
+@app.route('/about')
+def about():
+    return {'age': 15, 'gender': 'male', 
+    'contact': {'discord': 'Le baguette man#9289'}, 
+    'tools': ['VSCode', 'Vim', 'Git']}
+
+app.run()
 ```
