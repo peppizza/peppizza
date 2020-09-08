@@ -9,7 +9,7 @@ def index():
 
 @app.route('/skills')
 def skills():
-    return {'skills': ['flask', 'python', 'Go', 'ReactJS']}
+    return {'skills': ['Flask', 'Python', 'Rust', 'Go', 'ReactJS']}
 
 @app.route('/about')
 def about():
