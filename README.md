@@ -17,5 +17,6 @@ def about():
     'contact': {'discord': 'Le baguette man#9289'}, 
     'tools': ['VSCode', 'Vim', 'Git']}
 
-app.run()
+if __name__ == '__main__':
+    app.run()
 ```
