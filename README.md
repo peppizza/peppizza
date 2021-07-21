@@ -1,1 +1,1 @@
-ayyyy 1000 commits
+my motivation is gone what do i do
